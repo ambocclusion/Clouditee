@@ -5,12 +5,12 @@ using System.Net;
 
 namespace Clouditee
 {
-    class Program
+    public class Program
     {
         public static Configuration configuration;
         public static BuildHandler buildHandler;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             configuration = JsonConvert.DeserializeObject<Configuration>(File.ReadAllText("configuration.json"));
             Console.WriteLine("Commencing.");

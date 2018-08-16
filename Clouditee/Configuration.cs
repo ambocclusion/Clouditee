@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Clouditee
 {
-    class Configuration
+    public class Configuration
     {
         public string buildLocation = "";
         public int listenPort = 0;
