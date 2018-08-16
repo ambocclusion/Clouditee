@@ -21,7 +21,7 @@ namespace Clouditee
         public static void StartServer()
         {
             var httpListener = new HttpListener();
-            var simpleServer = new SimpleServer(httpListener, "http://*:1234/", ProcessYourResponse);
+            var simpleServer = new SimpleServer(httpListener, string.Format("http://*:{0}/", configuration.listenPort), ProcessYourResponse);
             buildHandler = new BuildHandler();
             simpleServer.Start();
         }

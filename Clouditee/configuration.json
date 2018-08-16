@@ -1,3 +1,4 @@
 ﻿{
-    "buildLocation": "./builds/"
+    "buildLocation": "./builds/",
+    "listenPort": 1234
 }
