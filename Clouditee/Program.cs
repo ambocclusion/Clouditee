@@ -8,7 +8,7 @@ namespace Clouditee
     class Program
     {
         public static Configuration configuration;
-        private static BuildHandler buildHandler;
+        public static BuildHandler buildHandler;
 
         static void Main(string[] args)
         {
